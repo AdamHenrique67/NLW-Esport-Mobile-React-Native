@@ -95,7 +95,7 @@ export function Game() {
         
         <DuoMatch 
           visible={discordDuoSelected.length > 0}
-          discord='teste#2020'
+          discord={discordDuoSelected}
           onClose={() => setDiscordDuoSelected('')}
         />
       </SafeAreaView>
