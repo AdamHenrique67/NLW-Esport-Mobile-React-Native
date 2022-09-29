@@ -23,7 +23,7 @@ interface Props  {
   onConnect: () => void
 }
 
-export function DuoCard({ data }: Props) {
+export function DuoCard({ data, onConnect }: Props) {
   return (
     <View style={styles.container}>
       <DuoInfo 
@@ -54,6 +54,7 @@ export function DuoCard({ data }: Props) {
 
       <TouchableOpacity
         style={styles.button}
+        onPress={onConnect}
       >
 
         <GameController
